@@ -8,7 +8,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-bar',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/analect-io/cdk-bar.git',
-
+  githubOptions: {
+    mergify: false
+  }
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
