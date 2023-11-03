@@ -1,0 +1,19 @@
+{
+  "version": "15.0.0",
+  "files": {
+    "a79ef104e1bd722892492fbbf0c8eba97a8be27934b65e85f0dacd0c68a1f12f": {
+      "source": {
+        "path": "BarStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "a79ef104e1bd722892492fbbf0c8eba97a8be27934b65e85f0dacd0c68a1f12f.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
