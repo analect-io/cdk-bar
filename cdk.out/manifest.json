@@ -17,13 +17,13 @@
     },
     "BarStack": {
       "type": "aws:cloudformation:stack",
-      "environment": "aws://unknown-account/unknown-region",
+      "environment": "aws://321036034216/eu-west-1",
       "properties": {
         "templateFile": "BarStack.template.json",
         "validateOnSynth": false,
-        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
-        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/a79ef104e1bd722892492fbbf0c8eba97a8be27934b65e85f0dacd0c68a1f12f.json",
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::321036034216:role/cdk-hnb659fds-deploy-role-321036034216-eu-west-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::321036034216:role/cdk-hnb659fds-cfn-exec-role-321036034216-eu-west-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-321036034216-eu-west-1/1912c88f9a0b29bd6222505fe32032cc2c7a6ddd626ef2750c0ba56f40deba94.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -34,132 +34,6 @@
         "BarStack.assets"
       ],
       "metadata": {
-        "/BarStack/Bar/Vpc/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpc08D3B59A"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1Subnet27F09662"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1RouteTable842C8866"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1RouteTableAssociation519D8AC7"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1DefaultRouteB912B9C0"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/EIP": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1EIP8733DF48"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet1/NATGateway": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet1NATGatewayABA5594A"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet2/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet2Subnet1D419B8B"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet2/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet2RouteTable193A4E18"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet2/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet2RouteTableAssociation216DB2EE"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PublicSubnet2/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPublicSubnet2DefaultRouteDA045AE0"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet1/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet1Subnet9552F965"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet1/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet1RouteTableF24311D9"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet1/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet1RouteTableAssociation128C96E6"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet1/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet1DefaultRouteF2BD0EC2"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet2/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet2Subnet4DD551EC"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet2/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet2RouteTable0ED18CDB"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet2/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet2RouteTableAssociation9E5E14FE"
-          }
-        ],
-        "/BarStack/Bar/Vpc/PrivateSubnet2/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcPrivateSubnet2DefaultRoute641D51BB"
-          }
-        ],
-        "/BarStack/Bar/Vpc/IGW": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcIGWDAB17DB0"
-          }
-        ],
-        "/BarStack/Bar/Vpc/VPCGW": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "BarVpcVPCGW40C388AC"
-          }
-        ],
         "/BarStack/Bar/Service/LB/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -250,160 +124,16 @@
             "data": "BarServiceSecurityGroupfromBarStackBarServiceLBSecurityGroup9BBD16CE8098B561D4"
           }
         ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Resource": [
+        "/BarStack/EcsDefaultClusterMnL3mNNYNVpc/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYN926A5246"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpc7788A521"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1Subnet3C273B99"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1RouteTableA1FD6ACC"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1RouteTableAssociation8B583A17"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1DefaultRouteFF4E2178"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/EIP": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1EIP8704DB2F"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet1/NATGateway": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet1NATGateway5E3732C1"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2Subnet95FF715A"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2RouteTable263DEAA5"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2RouteTableAssociation43E5803C"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2DefaultRouteB1375520"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/EIP": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2EIPF0764873"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PublicSubnet2/NATGateway": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPublicSubnet2NATGateway4C855E00"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1Subnet075EFF4C"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1RouteTable4F1D2E36"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1RouteTableAssociation34B92275"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet1/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet1DefaultRouteA5ADF694"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/Subnet": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2SubnetE4CEDF73"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/RouteTable": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2RouteTableDCE46591"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/RouteTableAssociation": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2RouteTableAssociation111C622F"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/PrivateSubnet2/DefaultRoute": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcPrivateSubnet2DefaultRoute20CE2D89"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/IGW": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcIGW9C2C2B8F"
-          }
-        ],
-        "/BarStack/EcsDefaultClusterMnL3mNNYN/Vpc/VPCGW": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "EcsDefaultClusterMnL3mNNYNVpcVPCGW2447264E"
+            "data": "EcsDefaultClusterMnL3mNNYNVpc18E0451A"
           }
         ],
         "/BarStack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata"
-          }
-        ],
-        "/BarStack/CDKMetadata/Condition": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "CDKMetadataAvailable"
           }
         ],
         "/BarStack/BootstrapVersion": [

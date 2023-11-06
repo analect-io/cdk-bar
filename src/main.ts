@@ -7,7 +7,7 @@ import { Construct } from 'constructs';
 
 // create a BarProp interface for Bar
 export interface BarProps {
-  readonly vpc?: ec2.Vpc;
+  readonly vpc?: ec2.IVpc;
 }
 
 
@@ -20,7 +20,7 @@ export class Bar extends Construct {
     this.vpc = props?.vpc ?? this.createVpc();
     // create a ALB Fargate service
     new pattern.ApplicationLoadBalancedFargateService(this, 'Service', {
-      // vpc: ec2.Vpc.fromLookup(this, 'Vpc', { isDefault: true }),
+      vpc: this.vpc,
       taskImageOptions: {
         image: ecs.ContainerImage.fromRegistry('nginx:latest'),
         containerPort: 80,
