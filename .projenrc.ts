@@ -15,9 +15,19 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-cdk',
     'ts-node',
   ],
+  publishToPypi: {
+    distName: 'cdk-bar',
+    module: 'cdk_bar',
+  },
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
   // packageName: undefined,  /* The "name" in package.json. */
 });
+
+const common_exclude = ['cdk.out', 'cdk.context.json'];
+
+project.npmignore!.exclude(...common_exclude);
+project.gitignore.exclude(...common_exclude);
+
 project.synth();

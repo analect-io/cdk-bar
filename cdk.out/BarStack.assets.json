@@ -1,16 +1,17 @@
 {
   "version": "15.0.0",
   "files": {
-    "a79ef104e1bd722892492fbbf0c8eba97a8be27934b65e85f0dacd0c68a1f12f": {
+    "1912c88f9a0b29bd6222505fe32032cc2c7a6ddd626ef2750c0ba56f40deba94": {
       "source": {
         "path": "BarStack.template.json",
         "packaging": "file"
       },
       "destinations": {
-        "current_account-current_region": {
-          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "a79ef104e1bd722892492fbbf0c8eba97a8be27934b65e85f0dacd0c68a1f12f.json",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        "321036034216-eu-west-1": {
+          "bucketName": "cdk-hnb659fds-assets-321036034216-eu-west-1",
+          "objectKey": "1912c88f9a0b29bd6222505fe32032cc2c7a6ddd626ef2750c0ba56f40deba94.json",
+          "region": "eu-west-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::321036034216:role/cdk-hnb659fds-file-publishing-role-321036034216-eu-west-1"
         }
       }
     }
